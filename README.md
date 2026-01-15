@@ -1,5 +1,7 @@
 # DTI Digital Challenge - School Management
 
+---
+
 ## About the Project
 This repository contains my implementation for a challenge proposed by **dti**.  
 The project focuses on processing **student grades and attendance**.
@@ -19,7 +21,10 @@ The project focuses on processing **student grades and attendance**.
 https://github.com/MarneyMelo/DesafioDtiProfessorCarlos.git
 ```
 2. Navigate to the project folder.
-3. Run the aplication: `dotnet run --project gradeManagement`.
+3. Run the aplication: 
+```bash
+dotnet run --project gradeManagement
+```
 
 ---
 
@@ -60,13 +65,15 @@ The project follows the **Single Responsibility Principle (SRP)**, where each cl
 dtiProcessoSeletivo/
 ├── dtiProcessoSeletivo.sln        # Visual Studio solution file
 ├── README.md                      # Project documentation
-└── gradeManagement/               # Main project (Console Application)
-    ├── Program.cs                 # Entry point: data input and output
-    ├── Models/                    # Entities
-    │   └── Student.cs             # Student class with properties and individual average
-    └── Services/                  # Processing logic
-        └── GradeCalculator.cs     # Calculates class averages and filters students 
-                                     performance/attendance
+├── gradeManagement/               # Main project (Console Application)
+│   ├── Program.cs                 # Entry point: data input and output
+│   ├── Models/                    # Entities
+│   │   └── Student.cs             # Student class with properties and individual average
+│   └── Services/                  # Processing logic
+│       └── GradeCalculator.cs     # Calculates class averages and filters students
+│                                    performance/attendance
+└── gradeManagement.Tests/         # Accuracy Assurance project (xUnit)
+    └── GradeCalculatorTests.cs    # Unit tests for business logic verification
 ```
 
 --- 
@@ -89,6 +96,29 @@ dtiProcessoSeletivo/
 
 ---
 
+## Tests
+
+The project includes a suite of unit tests to ensure the integrity of business rules and mathematical calculations. They were implemented to guarantee that the system has a expected behavior.
+
+#### How to run tests:
+
+1. Open a terminal in the solution root folder.
+2. Run the command:
+
+```bash
+dotnet test
+
+```
+
+#### Scenarios covered:
+
+* **Calculation Accuracy**: Validating class averages per subject.
+* **Filtering Logic**: Ensuring students with attendance below 75% are correctly identified.
+* **Performance Evaluation**: Verifying the logic for students performing above the class average.
+* **Edge Cases**: Handling empty student lists to prevent application crashes.
+
+---
+
 ## Project Status
 The current version focuses on the core business logic. Although a frontend in React was listed as desirable, I prioritized the robustness and architecture of the back-end to ensure a solid code. I had not worked with React before, but I had already started studying it during this period.
 
@@ -99,3 +129,6 @@ The current version focuses on the core business logic. Although a frontend in R
 **Marney Melo**  
 Email: marney.melo@outlook.com  
 GitHub: [MarneyMelo](https://github.com/MarneyMelo)
+
+---
+

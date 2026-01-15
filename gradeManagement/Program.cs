@@ -45,7 +45,7 @@ while (true)
 }
 if (studentsList.Any()) // if (studentsList.Count > 0) works too
 {
-    // Console.WriteLine("Name, Average and Attendance by Student");
+    // Console.WriteLine("Name, Average and Attendance% by Student");
     foreach (var student in studentsList)
     {
         Console.WriteLine($"{student.Name} {student.AverageGrades:F0} {student.Attendance}%");

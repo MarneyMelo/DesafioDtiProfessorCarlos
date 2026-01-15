@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="gradeManagement.Tests/gradeManagement.Tests.csproj" />
   <Project Path="gradeManagement/GradeManagement.csproj" />
 </Solution>
