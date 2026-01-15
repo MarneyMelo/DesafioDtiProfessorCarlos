@@ -120,7 +120,8 @@ dotnet test
 ---
 
 ## Project Status
-The current version focuses on the core business logic. Although a frontend in React was listed as desirable, I prioritized the robustness and architecture of the back-end to ensure a solid code. I had not worked with React before, but I had already started studying it during this period.
+The current version focuses on the core business logic. Although a frontend in React was listed as desirable, I prioritized the robustness and architecture of the back-end to ensure a solid and maintainable code. 
+To go beyond the basics requirements, I implemented some **Unit Tests** to ensure the logic and mathematical accuracy of the aplication. I had not worked with React before, but I had already started studying it during this period.
 
 ---
 
